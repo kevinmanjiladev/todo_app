@@ -1,0 +1,86 @@
+/* ==== General ==== */
+body {
+  background: #eaf1ff; /* light blue background */
+  font-family: 'Inter', sans-serif;
+  color: #0d47a1; /* deep blue text */
+}
+
+/* ==== Main Container ==== */
+.todo-container {
+  max-width: 600px;
+  margin: 60px auto;
+  background: white;
+  border-radius: 16px;
+  box-shadow: 0 8px 20px rgba(0,0,0,0.08);
+  padding: 30px;
+  border-top: 6px solid #1976d2; /* primary blue */
+}
+
+/* ==== Headings ==== */
+h3 {
+  color: #0d47a1;
+  font-weight: 600;
+}
+
+/* ==== Buttons ==== */
+.btn-primary {
+  background-color: #1976d2; /* main blue */
+  border-color: #1976d2;
+}
+.btn-primary:hover {
+  background-color: #1565c0; /* darker hover */
+  border-color: #1565c0;
+}
+
+.btn-outline-danger {
+  color: #1976d2;
+  border-color: #1976d2;
+}
+.btn-outline-danger:hover {
+  background-color: #bbdefb;
+  border-color: #0d47a1;
+  color: #0d47a1;
+}
+
+/* ==== Tasks ==== */
+.task-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #f3f6fd;
+  padding: 10px 15px;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  transition: transform 0.2s;
+}
+.task-item:hover {
+  transform: scale(1.02);
+}
+
+.task-title {
+  flex: 1;
+  margin-left: 10px;
+  color: #0d47a1;
+}
+
+/* Completed task look */
+.completed {
+  text-decoration: line-through;
+  color: #90a4ae;
+}
+
+/* ==== Delete Button ==== */
+.delete-btn {
+  text-decoration: none;
+  color: #ef5350;
+  font-weight: bold;
+  margin-left: 10px;
+}
+.delete-btn:hover {
+  color: #c62828;
+}
+
+/* ==== No task message ==== */
+.text-muted {
+  color: #64b5f6 !important;
+}
